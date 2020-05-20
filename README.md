@@ -25,10 +25,10 @@ Using a neural collaborative filtering model on the latest Raspberry PI to date 
 	Navigate to the status tab and click on Local Network in the sub menu. Click on DCHP table to find other devices connected to the router.<br>
 	<img src="linksystable.png" />
 	In a terminal on the connected pc type <br>
-	<code>ssh pi@<device ip></code>
-	For example:
-	My Raspberry Pi’s IP: 10.1.1.141 (As seen in the DCHP table)
-	ssh pi@10.1.1.141
+	<code>ssh pi@ (device ip)</code>
+	For example:<br>
+	My Raspberry Pi’s IP: 10.1.1.141 (As seen in the DCHP table)<br>
+	<code>ssh pi@10.1.1.141</code><br>
 	</p>
 </ul>
 
