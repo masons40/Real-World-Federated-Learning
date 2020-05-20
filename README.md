@@ -62,16 +62,16 @@ Using a neural collaborative filtering model on the latest Raspberry PI to date 
 	<p>
 	 install the following packages:<br>
 
-	<code>sudo apt-get install python3-numpy<br>
-	sudo apt-get install libblas-dev<br>
-	sudo apt-get install liblapack-dev<br>
-	sudo apt-get install python3-dev<br>
-	sudo apt-get install libatlas-base-dev<br>
-	sudo apt-get install gfortran<br>
-	sudo apt-get install python3-setuptools<br>
-	sudo apt-get install python3-scipy<br>
-	sudo apt-get update<br>
-	sudo apt-get install python3-h5py</code>
+	<code>sudo apt-get install python3-numpy</code><br>
+	<code>sudo apt-get install libblas-dev</code><br>
+	<code>sudo apt-get install liblapack-dev</code><br>
+	<code>sudo apt-get install python3-dev</code><br>
+	<code>sudo apt-get install libatlas-base-dev</code><br>
+	<code>sudo apt-get install gfortran</code><br>
+	<code>sudo apt-get install python3-setuptools</code><br>
+	<code>sudo apt-get install python3-scipy</code><br>
+	<code>sudo apt-get update</code><br>
+	<code>sudo apt-get install python3-h5py</code>
 	<br>
 	Run the following command:<br>
 	<code>pip3 install tensorflow</code><br>
