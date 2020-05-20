@@ -29,6 +29,89 @@ Using a neural collaborative filtering model on the latest Raspberry PI to date 
 	For example:<br>
 	My Raspberry Pi’s IP: 10.1.1.141 (As seen in the DCHP table)<br>
 	<code>ssh pi@10.1.1.141</code><br>
+	Default Raspbian installations comes with this default account:<br>
+	Username: pi<br>
+	Password: raspberry<br>
+	Now with SSH you can enable wifi(next step), removing the need to be connected to the router. <br>
 	</p>
+	<li>Connect to WIFI</li>
+	<p>Full set and more details for connecting to the WIFI can be found here: <a href="https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md">Raspberry Pi WIFI</a>
+	Brief Setup<br>	
+	<code>sudo raspi-config</code><br>
+	Choose network<br>
+	Enter in your country<br>
+	You will need to find your SSID(router name id example “Linksys05783”) and passphrase<br>
+	Use this command again: <code>sudo raspi-config</code> to update the time for the raspberry pi.
+	</p>
+	<p>If you cannot update teh time with the above method the use this command#
+	<code>sudo date -s '30 Oct 2019 19:26'</code><br>
+	making sure to change the date and time to the current date and time.<br>
+	Once done run:<br>
+	sudo apt-get update<br>
+	</p> 
+	<li>Check the version of python on the raspberry pi</li>
+	<code>python --version</code>
+	<p>if the version is python3.6 then you're ready to go, if not you will need to get python version 3.6</p>
+	<li>Install pip3 on the raspberry pi <a href="https://www.raspberrypi.org/documentation/linux/software/python.md">link</href></li>
+	<p>command: <code>sudo apt install python3-pip</code><br>
+	This will give us the python 3 version of pip<br>
+	Update pip:<br>
+	<code>pip3 install --upgrade pip</code>
+	</p>
+	<li>Install tensorflow <a href="https://www.teknotut.com/en/install-tensorflow-and-keras-on-the-raspberry-pi/#Install_in_easily_way">Link</a></li>
+	<p>
+	 install the following packages:<br>
+
+	<code>sudo apt-get install python3-numpy<br>
+	sudo apt-get install libblas-dev<br>
+	sudo apt-get install liblapack-dev<br>
+	sudo apt-get install python3-dev<br>
+	sudo apt-get install libatlas-base-dev<br>
+	sudo apt-get install gfortran<br>
+	sudo apt-get install python3-setuptools<br>
+	sudo apt-get install python3-scipy<br>
+	sudo apt-get update<br>
+	sudo apt-get install python3-h5py</code>
+	<br>
+	Run the following command:<br>
+	<code>pip3 install tensorflow</code><br>
+
+	Test if the installation worked:<br>
+
+	<code>Python3 -c 'import tensorflow as tf; print(tf.__version__)'</code>
+	</p>
+	<li>Install Pytorch <a href="https://medium.com/secure-and-private-ai-writing-challenge/a-step-by-step-guide-to-installing-pytorch-in-raspberry-pi-a1491bb80531"></a></li>
+	<p>Download and put the whl file on the raspberry pi <a href="https://drive.google.com/file/d/1D3A5YSWiY-EnRWzWbzSqvj4YdY90wuXq/view">whl</a>
+
+	Install the PyTorch dependencies:<br>
+	<code>sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev python3-yaml python3-setuptools</code><br>
+
+	Once finished run the following command to install PyTorch:<br>
+	<br>pip3 install torch_file_name.whl</code><br>
+
+	*make sure to change the name to the file that you downloaded and put on the raspberry pi<br>
+
+	Test if the installation worked:<br>
+
+	<code>Python3 -c 'import torch'</code><br>
+	If no errors show then the installations worked</p>
+
+	<li>Install PySyfy <a href="https://medium.com/secure-and-private-ai-writing-challenge/a-step-by-step-guide-to-installing-pysyft-in-raspberry-pi-d8d10c440c37">link</a></li>
+	<p>
+	Download and put the whl file on the raspberry pi whl file<br>
+
+	Run the following command to install Pysyft with no dependencies:<br>
+	<code>pip3 install syft==0.1.13a1 --no-dependencies</code><br>
+
+	Run the following command to install the needed dependencies:<br>
+	<code>sudo pip3 install Flask flask-socketio lz4 msgpack websockets zstd</code><br>
+
+
+	Test if the installation worked:<br>
+
+	<code>Python3 -c 'import syft</code<br>
+	If no errors show then the installations worked<br>
+	</p>
+
 </ul>
 
