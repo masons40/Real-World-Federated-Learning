@@ -112,6 +112,17 @@ Using a neural collaborative filtering model on the latest Raspberry PI to date 
 	<code>Python3 -c 'import syft</code<br>
 	If no errors show then the installations worked<br>
 	</p>
+</ul>
 
+
+<h2>Setting up the federated system</h2>
+
+<ul>
+	<li>Clone the repo <a href="https://github.com/masons40/Real-World-Federated-Learning">Link</a></li>
+	<code>cd Real-World-Federated-Learning</code>
+
+	<li>Clone the pysyft repo <a href="https://github.com/microsoft/recommenders">Link</a></li>
+	<code>cd PySyft</code>
+	<code>git reset --hard 1cac86d524ac7dd6b2e6972b5f70513362e83a34</code>
 </ul>
 
